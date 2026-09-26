@@ -18,5 +18,8 @@ public class App {
                                         RentalService rentalService,
                                         FleetReport report) {
         System.out.println("TEAM FEATURES NOT YET INTEGRATED");
+
+        System.out.println("Available vehicles = " + report.availableVehicleIds());
     }
+    
 }
