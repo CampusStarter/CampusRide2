@@ -20,6 +20,11 @@ public class App {
         System.out.println("TEAM FEATURES NOT YET INTEGRATED");
 
         System.out.println("Available vehicles = " + report.availableVehicleIds());
+        // ... inside runTeamFeatures(...)
+    System.out.printf("S10 / 40 min = %.2f%n", fleet.findById("S10").calculatePrice(40));
+        EBike eBike = new EBike("E20", 95);
+        eBike.charge(20);
+        System.out.println("E20 battery = " + eBike.getBatteryLevel());
     }
     
 }
